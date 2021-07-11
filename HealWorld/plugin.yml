@@ -1,0 +1,5 @@
+name: HealWorld
+main: loxleyshadow.healworld.HealWorldMain
+version: 1.0-ALPHA
+author: LoxleyShadow
+api-version: 1.17
