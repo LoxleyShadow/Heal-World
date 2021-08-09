@@ -19,12 +19,12 @@ public class ChunkClassifier {
 		List<String> playerBlocks = HealWorldMain.getInstance().getConfig().getStringList("playerBlocks");
 		int devCount = 0;
         
-        for (String str : playerBlocks) {
-        	if (chunk.contains(Material.getMaterial(str).createBlockData())) {
-        		devCount++;
-        	}
-        }
-        
-        return devCount >= devThreshold;
+		for (String str : playerBlocks) {
+			if (chunk.contains(Material.getMaterial(str).createBlockData())) {
+				devCount++;
+			}
+		}
+
+		return devCount >= devThreshold;
 	}
 }
